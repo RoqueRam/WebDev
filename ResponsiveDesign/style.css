@@ -1,0 +1,80 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-text-emphasis: none;
+          text-emphasis: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0082E6), to(white));
+  background-image: linear-gradient(#0082E6, white);
+}
+
+nav {
+  background-color: #0082E6;
+  height: 80px;
+  width: 100%;
+}
+
+nav .logo {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav img {
+  /*propiedades de la imagen*/
+  width: 80px;
+  height: 80px;
+}
+
+nav ul {
+  /*así es como se pone una tabla al lado derecho de la pantalla*/
+  float: right;
+  margin-right: 20px;
+}
+
+nav li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  text-transform: uppercase;
+  -webkit-text-decoration-color: none;
+          text-decoration-color: none;
+}
+
+nav a.active, nav a:hover {
+  background-color: #1b9bff;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+nav #check {
+  display: none;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

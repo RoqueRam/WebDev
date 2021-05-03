@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-emphasis: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(#0082E6,white);
+}
+
+nav{
+    background-color: #0082E6;
+    height: 80px;
+    width: 100%;
+
+    .logo{
+        width: 30px;
+        height: 30px;
+        background: transparent;
+        font-size: 35px;
+        line-height: 80px;
+        padding: 0 100px;
+        font-weight: bold;
+    }
+
+
+    img{ /*propiedades de la imagen*/
+        width: 80px;
+        height: 80px;
+    }
+
+    ul{  /*así es como se pone una tabla al lado derecho de la pantalla*/
+        float: right;
+        margin-right: 20px;
+    }
+
+    li{ //es lo que separa en forma de listas
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+    }
+
+    a{ //propiedades 
+        color: white;
+        font-size: 17px;
+        padding: 7px 13px;
+        text-transform: uppercase;
+        text-decoration-color: none;
+    }
+
+    a.active, a:hover{  //Animacion de entrada y sobrecolor cuando se pasa el puntero
+        background-color: #1b9bff;
+        transition: .5s;
+    }
+
+    #check{
+        display: none;
+    }
+
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}

@@ -1,0 +1,55 @@
+body {
+  background-color: black;
+}
+
+.SegundaDiv {
+  background-color: cyan;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 60%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font: bold;
+}
+
+.PrimerDiv {
+  background-color: #02ff0f;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 40px;
+}
+
+.PrimerDiv button {
+  height: 40px;
+  background-color: white;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  position: absolute;
+  top: 1%;
+}
+
+.PrimerDiv button::after {
+  content: ' After';
+}
+
+.PrimerDiv button:hover {
+  background-color: red;
+}
+
+.Personalizado {
+  background-color: #02ff0f;
+  font-size: 40px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
