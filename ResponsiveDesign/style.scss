@@ -73,7 +73,7 @@ nav{
 }
 
 @media (max-width:925px){
-    label.logo{
+    label.logo{ //goes back of the logo
         font-size: 30px;
         padding-left: 50px;
     }
@@ -109,7 +109,7 @@ nav{
         font-size: 20px;
     }
 
-    a:hover ,a.active{
+    a:hover ,a.active{ //el color de las cosas cuando pones el puntero sobre
         background: none;
         color: white;
     }
