@@ -83,6 +83,76 @@ nav{
     }
 }
 
+.bannersection{     //Creamos la parte que le dara formato a la seccion del banner
+    width: 100%;
+    height: 400px;
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr;
+    grid-template-areas: 
+    "left right"
+    "middle middle"
+    ;
+
+    gap: 0.2rem;
+    justify-content: center;
+}
+
+.left{//se mueve el texto del bloque "left" al lado izquierdo
+    grid-area: left;
+    padding-top: 100px;
+    height: 300px;
+    padding-left: 150px;
+    line-height: 20px;
+
+    span{   //le dimos formato al texto del lado izquierdo
+        font-size: 30px;
+        font-weight: 30px;
+        padding: 7px;
+        color: rgb(1,15,53);
+    }
+
+    .subtitle{ //se le da formato de columnas
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.right{     //se mueve el texto del bloque "right" al lado derecho
+    grid-area: right;
+    padding-top: 100px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    padding-left: 150px;
+
+    span{   //se le da formato al texto
+        font-size: 30px;
+        font-weight: bold;
+        padding: 5px;
+        color: rgb(236,110,37);
+    }
+}
+
+.middlemobile{
+    display: none;
+}
+
+.middle{
+    grid-area: middle;
+    height: 100px;
+    padding-left: 30%;  //por meter aqui 30px no se hacia bien el centrado ... revisa bien los valores que metes
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(169,180,19);
+}
+
 @media (max-width: 1198px){
     .checkbtn{
         display:block;
