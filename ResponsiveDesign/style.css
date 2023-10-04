@@ -101,7 +101,8 @@ nav #check {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 0.2fr;
       grid-template-rows: 0.2fr;
-      grid-template-areas: "left right" "middle middle";
+      grid-template-areas: "left right"
+ "middle middle";
   gap: 0.2rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -173,6 +174,18 @@ nav #check {
   font-size: 50px;
   font-weight: bold;
   color: #a9b413;
+}
+
+/* El dia 2023/10/04 se ingresan las 
+cajas de contenido con la info de los servers*/
+.newsbox{
+    width: 33.33%;
+    height: 300px;
+    border: solid 1px;
+    border-style: dashed;
+    border-radius: 20px;
+    border-color: rebeccapurple;
+    padding: 15px;
 }
 
 @media (max-width: 1198px) {
